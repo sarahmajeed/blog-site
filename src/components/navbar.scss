@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .header-link {
+    a {
+      color: #999999;
+      margin-left: 10px;
+    }
+  }
+}
