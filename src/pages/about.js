@@ -1,10 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "../components/footer"
+
+import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
     <div>
+      <Layout></Layout>
+
       <h1>About</h1>
       <p>
         I am Sarah Majeed, un undergraduate software engineering student, who is
@@ -14,7 +17,6 @@ const AboutPage = () => {
       <p>
         Need a developer? <Link to="/contact">Contact Me</Link>
       </p>
-      <Footer />
     </div>
   )
 }

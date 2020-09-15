@@ -1,17 +1,19 @@
 import React from "react"
-import Footer from "../components/footer"
+
+import Layout from "../components/layout"
 
 const contact = () => {
   return (
     <div>
-      <h1>Contact</h1>
-      <p>
-        Contact me at:
-        <a target="_blank" href="https://github.com/Sarahmdawood">
-          Github
-        </a>
-      </p>
-      <Footer />
+      <Layout>
+        <h1>Contact</h1>
+        <p>
+          Contact me at:
+          <a target="_blank" href="https://github.com/Sarahmdawood">
+            Github
+          </a>
+        </p>
+      </Layout>
     </div>
   )
 }
