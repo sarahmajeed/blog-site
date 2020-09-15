@@ -5,9 +5,7 @@ import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <div>
-      <Layout></Layout>
-
+    <Layout>
       <h1>About</h1>
       <p>
         I am Sarah Majeed, un undergraduate software engineering student, who is
@@ -17,7 +15,7 @@ const AboutPage = () => {
       <p>
         Need a developer? <Link to="/contact">Contact Me</Link>
       </p>
-    </div>
+    </Layout>
   )
 }
 
