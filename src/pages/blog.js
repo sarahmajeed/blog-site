@@ -20,11 +20,17 @@ const BlogPage = () => {
   return (
     <Layout>
       <h1>Blog</h1>
-      {blogPosts.allMarkdownRemark.edges.map(blogPost => (
-        <ol>
-          <li>{blogPost.node.frontmatter.title}</li>
-        </ol>
-      ))}
+      <ol>
+        {blogPosts.allMarkdownRemark.edges.map(blogPost => (
+          <li>
+            <h2>{blogPost.node.frontmatter.title}</h2>
+            <p>
+              (Dated:
+              {blogPost.node.frontmatter.date})
+            </p>
+          </li>
+        ))}
+      </ol>
     </Layout>
   )
 }

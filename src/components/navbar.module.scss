@@ -1,7 +1,9 @@
 .nav {
   padding: 1rem 0 3rem;
 }
-
+.header {
+  animation: yourAnimation 0.5s forwards 0s linear;
+}
 .title {
   color: #000000;
   font-size: 3rem;
@@ -28,4 +30,37 @@
 
 .active-nav-item {
   color: #333333;
+}
+
+@keyframes yourAnimation {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+  100% {
+  }
+}
+@keyframes yourAnimation {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+  100% {
+  }
 }

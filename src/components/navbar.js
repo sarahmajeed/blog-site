@@ -15,7 +15,7 @@ const Navbar = () => {
   `)
   return (
     <nav className={headerStyles.nav}>
-      <h3>
+      <h3 className={headerStyles.header}>
         <Link className={headerStyles.title} to="/">
           {data.site.siteMetadata.author}
         </Link>
