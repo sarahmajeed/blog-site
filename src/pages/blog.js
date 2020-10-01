@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 
-const BlogPage = () => {
+const BlogPage = props => {
   const blogPosts = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
